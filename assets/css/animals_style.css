@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 300px;
+}
+.shad{
+    box-shadow: -1px 15px 45px -12px green ;
+}
+.card-image{
+    width: 350px;
+    height: 250px;
+    transform: translateY(-30px);
+}
+.card-title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-description{
+    background-color: white;
+    text-align: justify;
+    height: 0px;
+    overflow: hidden;
+    color: white;
+    min-height: 0px;
+    transition: color .4s .4s, padding .4s, min-height .4s;
+}
+.card:hover .card-description{
+height: initial;
+min-height: 150px;
+padding: 20px 35px;
+color: black;
+}
+
+.card:hover .states-container{
+    opacity: 1;
+}
+.states-container{
+    opacity: o;
+    padding: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 1.5s 0.6s linear;
+    background-color: green;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+.states-container > div{
+    padding: 10px 20px;
+}
+.lifespan{
+    border-right: 20px solid white;
+}
+.mass{
+    border-right: 20px solid #fff;
+}
+.lable{
+    text-align: center;
+    font-weight: bold;
+}
+.value{
+    text-align: center;
+}
+@media screen and (max-weigth: 1000px) {
+    .flexbox{
+        flex-direction: column;
+        height: initial;
+    }
+    .card{
+        margin: 50px 0;
+    }
+}
+
+
+
+
+
+
+

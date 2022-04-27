@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/index_style.css">
+<link rel="stylesheet" href="assets/css/weeks_style.css">
+<title>Kids Zone</title>
+</head>
+<body>
+  
+   <!-----------home page------>
+   <section class="banner">
+    <header>
+        <a href="index.html" class="logo"><img src="assets/images/K.Z Logo.png" style="width: 100px;"></a>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid d-flex">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ENGLISH
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="ABC1.html">ABC's</a></li>
+                    <li><a class="dropdown-item" href="abc.html">abc's</a></li>
+                   </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MATH
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="count.html">Counting 123...</a></li>
+                    <li><a class="dropdown-item" href="table.html">Table 2,3,4,5</a></li>
+                    <li><a class="dropdown-item" href="add_ques.html">Addition</a></li>
+                    <li><a class="dropdown-item" href="sub_ques.html">Subtraction</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="RHYMES.html">RHYMES</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="animals.html">ANIMALS</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="vegetable.html">VEGETABLES</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="color.html">COLORS</a>
+                </li>
+  
+  
+            
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+  
+  
+                 </ul>
+            </div>
+          </div>
+        </nav>
+  
+        
+    </header>
+    <div class="content">
+        <div class="contentBx">
+            <h2 class="anileft">About Kids</h2>
+            <p class="aniright">A child is a human being between the stages of birth and puberty, or between the developmental period of infancy and puberty. The legal definition of child generally refers to a minor, otherwise known as a person younger than the age of majority.</p>
+            <a href="#get"><span>Get Start</span></a>
+        </div>
+
+        <div class="imgBx">
+            <img src="assets/images/Child1.png" alt="">
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href="#"><img src="assets/images/facebook.png"></a></li>
+        <li><a href="#"><img src="assets/images/twitter.png"></a></li> 
+        <li><a href="#"><img src="assets/images/instagram.png"></a></li>
+
+    </ul>
+   
+
+
+    </section>
+<script type="text/javascript">
+
+
+    function createsquare(){
+        const section = document.querySelector('section');
+        const square = document.createElement('s');
+
+        var size =  Math.random() * 6;
+
+        square.style.width = 7 + size +'px';
+        square.style.height = 7 + size +'px';
+
+        square.style.top = Math.random() * innerHeight + 'px';
+        square.style.left = Math.random() * innerWidth + 'px';
+
+        const bg = colors[Math.floor(Math.random() * colors.length)];
+        square.style.background = bg;
+
+
+        section.appendChild(square);
+        setTimeout(() =>{
+            square.remove()
+        },5000)
+
+    }
+    setInterval(createsquare , 150)
+</script>
+
+
+<!---------------homepage-end------------->
+ 
+
+
+<br><br><br><br>
+<hr>
+<center><h1 class="heading-bold">ACTIVITIES</h1></center>
+<hr>
+<!-- Item slider end-->
+<div id="get" class="container">
+<div class="flexbox">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <img src="assets/images/Praying.jpg" style="height: 300px;" alt="" class="card image">
+      <div class="card-title">Praying</div>
+   
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6">
+  <div class="card shad">
+    <img src="assets/images/Brush-teeth.png"  style="height: 300px;" alt="" class="card image">
+    <div class="card-title">Brushing Teeth</div>
+    
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <img src="assets/images/Drinking Milk.jpg" style="height: 300px;" alt="" class="card image">
+      <div class="card-title">Drinking Milk</div>
+      </div>
+      </div>
+</div>
+</div>
+
+<div class="container">
+<div class="flexbox">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <img src="assets/images/Eating.png" style="height: 300px;" alt="" class="card image">
+      <div class="card-title">Eating</div>
+   
+  </div>
+</div>
+
+
+<div class="col-lg-3 col-md-6">
+  <div class="card shad">
+    <img src="assets/images/Playing.jpg"  style="height: 300px;" alt="" class="card image">
+    <div class="card-title">Playing</div>
+    
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <img src="assets/images/photographerr.jpg" style="height: 300px;" alt="" class="card image">
+      <div class="card-title">Photographer</div>
+      </div>
+      </div>
+</div>
+</div>
+<br><br><br><br>
+<!-- Weeks -->
+<hr>
+ <center><h1 class="heading-bold">Weeks</h1></center>
+ <hr>
+<div class="flexbox" style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Sunday</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Monday</div>
+   
+  </div>
+</div>
+
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Tuesday</div>
+   
+  </div>
+</div>
+</div>
+
+
+<div class="flexbox"  style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Wednesday</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Thursday</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Friday</div>
+     </div>
+</div>
+</div>
+
+<div class="flexbox"  style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Staturday</div>
+   
+  </div>
+</div>
+</div>
+<br><br><br>
+
+<!-- Weeks -->
+<hr>
+ <center><h1 class="heading-bold">Months</h1></center>
+ <hr>
+<div class="flexbox"  style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">January</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">Febuary</div>
+   
+  </div>
+</div>
+
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">March</div>
+   
+  </div>
+</div>
+</div>
+
+
+<div class="flexbox"  style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">April</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">May</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">June</div>
+     </div>
+</div>
+</div>
+
+<div class="flexbox"  style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">July</div>
+   
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">August</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">September</div>
+     </div>
+</div>
+</div>
+
+<div class="flexbox"  style="height: 20vh;">
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">October</div>
+   
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">November</div>
+   
+  </div>
+</div>
+  <div class="col-lg-3 col-md-6">
+  <div class="card shad">
+      <div class="card-title">December</div>
+     </div>
+</div>
+</div>
+
+
+</div>
+       
+
+<!--------------------------footer--------------->
+<section id="footer">
+<footer>
+    <div class="container">
+        <div class="sec aboutus">
+           <h2>about us</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium quisquam explicabo nemo dolore eius cupiditate a pariatur, cum facilis voluptas ab numquam, error deserunt rem illo et laudantium quo!</p>
+            </div>
+       
+        <div class="sec contact">
+            <h2>conatct info</h2>
+            <ul class="info">
+                <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span>Aptech Metro Star Gate Karachi</span></li>
+                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span><span>00-0000-0000</span></li>
+                <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span><span>abcd@gmail.com</span></li>
+            </ul>
+        </div>
+        
+    </div>
+    </footer>
+    </section>
+    <!----------footer-end------>
+    <script src="assets/js/style.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

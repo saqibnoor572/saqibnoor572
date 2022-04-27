@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="contact_style.css">
+<title>Title</title>
+
+</head>
+<body>
+        
+    
+    <script>
+        function validate(){
+            if(fname.value ==""){alert('Please Enter Your First Name');return false;}
+			if(lname.value ==""){alert('Please Enter Your Last Name');return false;}
+			if(email.value ==""){alert('Please Enter E-mail Address');return false;}
+			if(num.value ==""){alert('Please Enter Mobile number');return false;}
+			if(msgbox.value ==""){alert('Please Write Some Message ');return false;}
+			alert('Message Sent');
+		}
+	</script>
+    
+
+    </nav>
+    <section>
+        <div class="container">
+            <div class="Contactinfo">
+               
+                   
+                
+            </div>
+            <div class="contactform">
+               
+                <div class="formbox">
+                <form onsubmit="validate()">
+                    <div class="inputbox w50">
+                        <input id="fname" type="text" pattern="[A-Za-z]{1,}"/>
+                        <span>First name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input id="lname" type="text" pattern="[A-Za-z]{1,}"/>
+                        <span>Last name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input id="fname" type="email"/>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input id="num"  type="number" />
+                        <span>Mobile number</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <textarea id="msgbox"></textarea>
+                        <span>Write your message here....</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <input type="submit" value="Send">
+                    </div>
+    </form>
+                </div>
+                
+    
+            </div>
+        </div>
+        
+        </section>
+        <script>
+            const colors = [
+            '#2196f3',
+            '#e91e63',
+            '#ffebeb',
+            '#74ff1d'
+    
+            ]
+    
+    
+    
+            function createsquare(){
+                const section = document.querySelector('section');
+                const square = document.createElement('s');
+    
+                var size = 	Math.random() * 10;
+    
+                square.style.width = 8 + size +'px';
+                square.style.height = 8 + size +'px';
+    
+                square.style.top = Math.random() * innerHeight + 'px';
+                square.style.left = Math.random() * innerWidth + 'px';
+    
+                const bg = colors[Math.floor(Math.random() * colors.length)];
+                square.style.background = bg;
+    
+    
+                section.appendChild(square);
+                setTimeout(() =>{
+                    square.remove()
+                },5000)
+    
+            }
+            setInterval(createsquare , 150)
+        </script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

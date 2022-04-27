@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ADDITION</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href=""><img src="assets/images/K.Z Logo.png" style="width: 100px;" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ENGLISH
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="ABC1.html">ABC's</a></li>
+                  <li><a class="dropdown-item" href="abc.html">abc's</a></li>
+                 </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MATH
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="count.html">Counting 123...</a></li>
+                  <li><a class="dropdown-item" href="table.html">Table 2,3,4,5</a></li>
+                  <li><a class="dropdown-item" href="add_ques.html">Addition</a></li>
+                  <li><a class="dropdown-item active" href="sub_ques.html">Substraction</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="RHYMES.html">RHYMES</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="animals.html">ANIMALS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="vegetable.html">VEGETABLES</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="color.html">COLORS</a>
+              </li>
+    
+    
+          
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+    
+          </div>
+        </div>
+      </nav>
+      <br><br>
+      <hr>
+      <center><h1>SUBSTRACTION</h1></center>
+      <hr>
+
+      <center>
+      <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section id="ques1">
+
+                      
+                          <h1 class="mt-5">12 - 7 = ?</h1>
+                          <input type="number" placeholder="Enter Your Answer" class="form-control mt-2" style="width: 300px;" id="ans1" required>
+                          <button class="btn btn-outline-primary m-1" onclick="sub1()"onclick="remove1()" >Submit</button><button class="btn btn-outline-danger  m-1" onclick="remove1()" >Remove</button>
+                      
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <section id="ques2">
+
+                        
+                          <h1 class="mt-5">9 - 1 = ?</h1>
+                          <input type="number" placeholder="Enter Your Answer" class="form-control mt-2" style="width: 300px;" id="ans2" required>
+                          <button class="btn btn-outline-primary m-1" onclick="sub2()"onclick="remove2()" >Submit</button><button class="btn btn-outline-danger  m-1" onclick="remove2()" >Remove</button>
+                       
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <section id="ques3">
+
+                        
+                          <h1 class="mt-5">12 - 7 = ?</h1>
+                          <input type="number" placeholder="Enter Your Answer" class="form-control mt-2" style="width: 300px;" id="ans3" required>
+                          <button class="btn btn-outline-primary m-1" onclick="sub3()"onclick="remove3()" >Submit</button><button class="btn btn-outline-danger  m-1" onclick="remove3()" >Remove</button>
+                        </section>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </center>
+<script>
+    // question 1
+    function sub1()
+    {
+        var a = document.getElementById("ans1").value;
+    if(a==5)
+    {
+        alert ('Answer is Correct');
+    }
+    else
+    {
+        alert ('Answer is Wrong');
+
+    }
+    }
+    function remove1()
+    {
+        var element = document.getElementById("ques1");
+        element.remove();
+    }
+
+// question 2
+    function sub2()
+    {
+        var a = document.getElementById("ans2").value;
+    if(a==8)
+    {
+        alert ('Answer is Correct');
+    }
+    else
+    {
+        alert ('Answer is Wrong');
+
+    }
+    }
+    function remove2()
+    {
+        var element = document.getElementById("ques2");
+        element.remove();
+    }
+
+    // question 3
+    function sub3()
+    {
+        var a = document.getElementById("ans3").value;
+    if(a==5)
+    {
+        alert ('Answer is Correct');
+    }
+    else
+    {
+        alert ('Answer is Wrong');
+
+    }
+    }
+    function remove3()
+    {
+        var element = document.getElementById("ques3");
+        element.remove();
+    }
+
+
+    
+    
+
+</script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
